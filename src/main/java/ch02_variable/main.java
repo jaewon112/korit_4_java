@@ -66,13 +66,14 @@ public class main {
 
         System.out.println("===================문자 자료형 변수=======================================");
         // 2. 문자 자료형 변수 char
+        // char  -> 문자 / String -> 문자열
         char name1 = '김';
         char name2 = '재';
         char name3 = '원';
-       // char  -> 문자 / String -> 문자열
 
-        System.out.println(name1 + name2);  //151512
-//        System.out.println("" + name1 + name2 + name3);
+
+        System.out.println(name1 + name2 + name3);
+       System.out.println("" + name1 + name2 + name3);
 
         System.out.println("========================================================================");
         /*

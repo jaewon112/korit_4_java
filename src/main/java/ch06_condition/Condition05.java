@@ -13,7 +13,7 @@ package ch06_condition;
  */
 import java.util.Scanner;
 
-public class Condition5 {
+public class Condition05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int score;
@@ -23,13 +23,13 @@ public class Condition5 {
         score = scanner.nextInt();
 
 
-        if(score > 90){
+        if(score > 89){
             grade = "A학점";
-        }else if(score > 80){
+        }else if(score > 79){
             grade = "B학점";
-        }else if (score > 70) {
+        }else if (score > 69) {
             grade = "C학점";
-        }else if (score > 60){
+        }else if (score > 59){
             grade = "D학점";
         }else {
             grade = "F학점";
