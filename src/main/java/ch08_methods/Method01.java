@@ -59,6 +59,7 @@ public class Method01 {
 
         // 4.
         System.out.println(call4(2025,4,24,"목"));
+
         String name ;
         int age;
         Scanner scanner = new Scanner(System.in);

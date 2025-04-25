@@ -15,8 +15,8 @@ public class Carmain {
         car1.drive();
         car2.drive();
 
-        System.out.println(car1.brake);
-        System.out.println(car2.brake);
+        System.out.println(car1.getBrake());
+        System.out.println(car2.getBrake());
 
         car1.displayCarInfo();
         car2.displayCarInfo();
