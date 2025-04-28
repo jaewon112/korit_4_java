@@ -26,8 +26,8 @@ public class Car {
     public void drive(){
         System.out.println(color + "자동차가 주행중입니다.\n최고 속도는" + speed + "입니다");
     }
-    public String getBrake() {
-        return color + " 자동차가 멈췄습니다";
+    public void getBrake() {
+        System.out.println(color + " 자동차가 멈췄습니다");
     }
 
     public void displayCarInfo() {
