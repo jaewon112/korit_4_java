@@ -25,11 +25,11 @@ public class Array07 {
         // 4를 출력
         System.out.println(arr03[2][0]);
 
-        //2차 배열에서의 elnment 출력 방법
+        //2차 배열에서의 element 출력 방법
 
-        //잘 생각해보면 1차 배열의 각 element들이 배열ㅇ비니다.
+        //잘 생각해보면 1차 배열의 각 element들이 배열입니다.
         // 근데 배열은 참조 변수에 해당했기 때문에 element를 출력하는 것이 불가능합니다.
-        // 향상된 for문을 적용한 2차 배열 분해ㅐ를 해보면
+        // 향상된 for문을 적용한 2차 배열 분해를 해보면
         for (int[] arr031 : arr03){
             System.out.println(arr031);
             for (int arr0311 : arr031) {

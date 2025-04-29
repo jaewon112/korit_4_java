@@ -30,8 +30,9 @@ public class Array06EnhancedFor {
 
         //for문을 통해 1~200을 출력
 
-        for (int i = 1; i <= numbers.length; i++) {
-            System.out.print(i);
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = i+1 ;
+            System.out.println(numbers[i]);
 
         }
         String[] names = {"강미경", "김광호", "김규철", "김대웅", "김명규", "김민성", "김민효",
@@ -41,9 +42,10 @@ public class Array06EnhancedFor {
         // method overloading도 적용하시오.
         // 메서드 호출을 위한 객체 생성
         Array06EnhancedFor array06EnhancedFor = new Array06EnhancedFor();
-        array06EnhancedFor.printElem(names);
-        System.out.println();
         array06EnhancedFor.printElem(numbers);
+        array06EnhancedFor.printElem(names);
+
+
 
     }
     public void printElem(int[] numbers) {
@@ -61,7 +63,8 @@ public class Array06EnhancedFor {
         //향상된 for문의 형식으로 작성
         // for (자료형 변수명 : 반복가능객체 (배열))
         for (String name : names) {
-            System.out.print(name +" / " );
+            System.out.print(name +" / " );     //출력문 쓰는 방법의 차이에 주목할 필요가 있음.
         }
     }
 }
+

@@ -18,6 +18,7 @@ public class Array04 {
             System.out.println(names[i] + " / ");
 
         }
+
     }
     public static void main(String[] args) {
         //객체 생성
