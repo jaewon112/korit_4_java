@@ -12,7 +12,9 @@ public class TvRemoteController {
     // 클래스명 객체명 = new 클래스명();
     public TvRemoteController(PowerButton powerButton,
                               ChannelDownButton channelDownButton,
-                              ChannelUpButton channelUpButton ,VolumeUpButton volumeUpButton,VolumeDownButton volumeDownButton){
+                              ChannelUpButton channelUpButton ,
+                              VolumeUpButton volumeUpButton,
+                              VolumeDownButton volumeDownButton){
 
         this.powerButton = powerButton;
         this.channelDownButton = channelDownButton;
@@ -46,7 +48,7 @@ public class TvRemoteController {
         System.out.println(channelUpButton.onUp());
     }
     public void onUpVolumeUpButton(){
-        System.out.println("TV의");
+        System.out.print("TV의");
         System.out.println(volumeUpButton.onUp());
     }
     public void onPressedvolumeUpButton() {
