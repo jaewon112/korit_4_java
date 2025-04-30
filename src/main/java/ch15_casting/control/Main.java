@@ -7,7 +7,13 @@ public class Main {
         Computer computer1 = new Computer();
         LED led1 = new LED();
         Mouse mouse1 = new Mouse();
+        Smartphone smartphone1 = new Smartphone();
+        Speaker speaker1 = new Speaker();
+        Tv tv1 = new Tv();
+
         CentralControl control1= new CentralControl(new Power[5]);
+
+
 
         //배열 생성 방법을 떠올려서 5개짜리 사이즈의 배열을 CentralControl() 생성자의 argument로 집어넣으시오|
 //        Power[] powers = {computer1,led1,mouse1}; // -> 암시적 업캐스팅이 이루어져있음.
@@ -19,14 +25,22 @@ public class Main {
         control1.addDevice(computer1);      // 여기서 0번 인덱스를 차지했기 때문에
         control1.addDevice(led1);
         control1.addDevice(mouse1);
+        control1.addDevice(speaker1);
+        control1.addDevice(smartphone1);
 
         control1.powerOn();
 
-
         control1.powerOff();
-
+        control1.performSpecificMethod();
 
 //        System.out.println(control1.checkEmpty());  // 결과값 : 1 -> checkEmpty()를 private 처리함
 
+        //Smartphone , Speaker , Tv 객체를 각각 만들어서 순서대로 control1 객체의 필드인 deviceArray에 집어넣기
+        //deviceArray에 연결된 제품들의 전원을 키도록 코드를 작성하시오.
+        //tv1의 전원을 켜도록 코드를 작성하시오.
+
+        //tv1 의 경우 control의 필드에 들어가 있지 않기 때문에
+        tv1.channelUp();
+        //변수.객체명(); 활용
     }
 }

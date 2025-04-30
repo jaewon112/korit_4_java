@@ -1,4 +1,7 @@
 package ch15_casting.control;
+
+import ch14_abstraction.abstraction_classes.PhoneFactory;
+
 /*
     LED 클래스 / Mouse 클래스를 생성하고 적절하게 메서드의 구현부를 완성
  */
@@ -42,9 +45,9 @@ public class CentralControl {
         //근데 안 비어있는 경우도 잇음
         return -1;
         /*
-            Java에서 index 넘버에는 음수값이 없기 때문에 (근데 python에는 마이너스index가 있음), 실패를 나타낼때 -1을 쓰는 경우가 많음
-            근데 0과 너무 가까운 수다보니까 -100을 먹인다든지 혹은 return값으로 나올 수 없을만한 음수를 지정하는 경우도 있는데,
-            나중에 addDevice()메서드에 if(checkEmpty() == -1909)로 쓰고싶지 않다면 -1 을 쓰는게 정신건강에 좋음.
+            Java에서 index 넘버에는 음수값이 없기 때문에 0이상이 정수이다 .
+            (근데 python에는 마이너스index가 있음), 실패를 나타낼때 -1을 쓰는데 이는 ,
+            "유효하지 않는 인덱스" = false라는 의미로 자주 쓰인다.
          */
     }
 
@@ -70,4 +73,32 @@ public class CentralControl {
             device.off();
         }
     }
+
+    // 배열 내부를 돌면서 각 element의 고유 메서드를 호출할 수 있도록 메서드를 작성할 예정
+    public void performSpecificMethod() {
+        for (Power device : deviceArray) {
+            if (device instanceof Tv) {        // 이 조건문이 true라면 해당 element는 tv의 인스턴스
+                Tv tv = (Tv) device;                // 명시적 다운캐스팅.
+                tv.channelUp();                     // 마찬가지로 tv로 다운캐스팅이 이루어져서 고유 메서드 실행 가능
+            } else if (device instanceof Mouse) {
+                Mouse mouse = (Mouse) device;
+                mouse.leftClick();
+            } else if (device instanceof Computer) {
+                Computer computer = (Computer) device;
+                computer.compute();
+            } else if (device instanceof Smartphone) {
+                Smartphone smartphone = (Smartphone) device;
+                smartphone.touchScreen();
+            } else if (device instanceof Speaker) {
+                Speaker speaker = (Speaker) device;
+                speaker.changeEqual();
+            } else if (device instanceof LED) {
+                LED led = (LED) device;
+                led.changeColor();
+            } else {
+                System.out.println();
+            }
+        }
+    }
+
 }
