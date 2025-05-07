@@ -33,7 +33,7 @@ public class Array07 {
         for (int[] arr031 : arr03){
             System.out.println(arr031);
             for (int arr0311 : arr031) {
-                System.out.println(arr0311);
+                System.out.print(arr0311);
             }
         }
         System.out.println("======================");
