@@ -28,13 +28,16 @@ public class Array06EnhancedFor {
         int[] numbers = new int[200];
          //1부터 200까지 대입하시오
 
-        //for문을 통해 1~200을 출력
+//        for문을 통해 1~200을 출력
 
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = i+1 ;
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i] + "/");
 
         }
+        System.out.println();
+//
+
         String[] names = {"강미경", "김광호", "김규철", "김대웅", "김명규", "김민성", "김민효",
                 "김서준", "김선영", "김재원", "김종보", "김호섭", "노소정", "염진우", "예영근",
                 "이수원", "이진혁", "정선유", "제다정"};
@@ -62,7 +65,9 @@ public class Array06EnhancedFor {
     public void printElem(String[] names) {
         //향상된 for문의 형식으로 작성
         // for (자료형 변수명 : 반복가능객체 (배열))
+
         for (String name : names) {
+
             System.out.print(name +" / " );     //출력문 쓰는 방법의 차이에 주목할 필요가 있음.
         }
     }

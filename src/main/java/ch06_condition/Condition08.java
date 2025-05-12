@@ -28,7 +28,6 @@ public class Condition08 {
         String leapyear = "";
 
 
-
 //        if( year < 0) {
 //            System.out.println("해당하지 않는 연도입니다.");
 //        }else if (year % 400 == 0){
@@ -43,33 +42,36 @@ public class Condition08 {
         // sout 이 반복되는 것을 줄일수 있는 방법
         // 더 극단적으로 줄일 방법은 없을지 (논리 연산자 사용 / 삼항 연산자 사용)
 
-//        if(year < 0) {
-//            leapyear = "해당하지 않는 연도";
-//        }else if (year % 400 == 0) {
-//            leapyear = "윤년입니다.";
-//        }else if (year % 100 == 0){
-//            leapyear = "윤년이 아닙니다.";
-//        }else if (year % 4 == 0){
-//            leapyear = "윤년입니다.";
-//        }else {
-//            leapyear = "윤년이 아닙니다.";
-//        }
-//        System.out.println(leapyear);
-
-        if(year < 0) {
-            leapyear = "해당하지 않는 연도.";
-        }else{
-            if (year % 400 == 0){
-                leapyear = "윤년입니다.";
-            }else if (year % 100 == 0){
-                leapyear = "윤년이 아닙니다.";
-            }else if (year % 4 == 0){
-                leapyear = "윤년입니다.";
-            }else {
-                leapyear = "윤년이 아닙니다.";
-            }
+        if (year < 0) {
+            leapyear = "해당하지 않는 연도";
+        } else if (year % 400 == 0) {
+            leapyear = "윤년입니다.";
+        } else if (year % 100 == 0) {
+            leapyear = "윤년이 아닙니다.";
+        } else if (year % 4 == 0) {
+            leapyear = "윤년입니다.";
+        } else {
+            leapyear = "윤년이 아닙니다.";
         }
         System.out.println(leapyear);
-
     }
 }
+
+
+
+//        if(year < 0) {
+//            leapyear = "해당하지 않는 연도.";
+//        }else{
+//            if (year % 400 == 0){
+//                leapyear = "윤년입니다.";
+//            }else if (year % 100 == 0){
+//                leapyear = "윤년이 아닙니다.";
+//            }else if (year % 4 == 0){
+//                leapyear = "윤년입니다.";
+//            }else {
+//                leapyear = "윤년이 아닙니다.";
+//            }
+//        }
+//        System.out.println(leapyear);
+//    }
+//}

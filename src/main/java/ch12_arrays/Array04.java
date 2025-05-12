@@ -18,8 +18,9 @@ public class Array04 {
             System.out.println(names[i] + " / ");
 
         }
-
     }
+
+
     public static void main(String[] args) {
         //객체 생성
         Scanner scanner = new Scanner(System.in);
@@ -43,16 +44,6 @@ public class Array04 {
 
         //이상의 코드를 참조하여 printNames() 메서드를 call2() 유형으로 작성
 
-/*
-public static void call2(String strExample) {// ()괄호 안에 있는 것을 매개변수라 함{
-
-        System.out.println("[o|x]");
-        System.out.println("오늘의 다짐 : " + strExample);
-    }
-
-public static void main(String[] args) {
-    call2(strExample :"");            // 호출 단계에서 () 내를 채우는 것을 argument
- */
 
 
         String[] strArr01 = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};

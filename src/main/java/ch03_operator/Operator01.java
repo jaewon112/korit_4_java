@@ -21,9 +21,9 @@ public class Operator01 {
             변수와 데이터가 동일하다는 수학적인 의미가 아닙니다.
          */
 
-//        int i2 = 20;
-//        i2 = i2 + 30 ; // 왼쪽과 오른쪽이 같다고 표시 할 때는 == 을 사용\
-//        System.out.println(i2);
+        int i2 = 20;
+        i2 = i2 + 30 ; // 왼쪽과 오른쪽이 같다고 표시 할 때는 == 을 사용\
+        System.out.println(i2);
         System.out.println("========================================================================");
         // 일반 연산자
         /*
@@ -34,11 +34,11 @@ public class Operator01 {
                 %: 나머지 연산자  - > 두 수를 나눴을 때 나머지 값을 반환합니다.
                                    소수점 이하를 버리는 정수 나눗셈에서만 정확하게 나머지를 구하는 데 사용됩니다.
          */
-//        int a = 5;
-//        int b = 2;
-//        double result = (double) a / b ;
-//        System.out.println(result);
-//        System.out.println(a%b);
+        int a = 5;
+        int b = 2;
+        double result = (double) a / b ;
+        System.out.println(result);
+        System.out.println(a%b);
 
         System.out.println("========================================================================");
         /*

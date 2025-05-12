@@ -60,6 +60,8 @@ public class Method01 {
         // 4.
         System.out.println(call4(2025,4,24,"목"));
 
+        String s = introduce("1", 3);
+        System.out.println(s);
         String name ;
         int age;
         Scanner scanner = new Scanner(System.in);

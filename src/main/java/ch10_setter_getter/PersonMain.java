@@ -43,8 +43,7 @@ public class PersonMain {
 
         //call1() / call() 유형의 경우 return이 없는 대신에 콘솔창에 출력하기 위해서는 메서드 내에 sout()을 구현할 필요가 있었다.
         //이상의 경우 main 단계에서 메서드 호출을 하기만 하면 콘솔창에 결과가 출력된다는 장점이 있기는 하지만 '데이터의 가공'이 어렵습니다
-
-        person1.getName2();
+//        person2.getName();
         person2.getName2();
 
     }

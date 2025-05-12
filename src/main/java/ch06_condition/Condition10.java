@@ -21,7 +21,7 @@ public class Condition10 {
 //        int max2;
 //
 //        // a > b 라면 max 에 a를 대입 / 아니라면 max에 b를 대입
-//        max = (a > b) ? a : b;
+//        max = (a > b) ? a : b ;
 //        System.out.println("max에 저장된 값은? : " + max);
 //
 //        //이상의 삼항연산자를 if - else 문으로 풀어 쓴다면

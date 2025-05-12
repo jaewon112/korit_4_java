@@ -1,6 +1,6 @@
 package ch14_abstraction.abstraction_classes;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         // PhoneFactory 객체 생성
         PhoneFactory phoneFactory1 = new PhoneFactory();

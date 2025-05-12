@@ -12,7 +12,7 @@ public class Condition09 {
 
         if((year % 4 == 0 && year % 100 != 0)|| (year % 400 == 0)){
             leapyear = "윤년입니다.";
-        }else{                          //4로 나누어 떻어지지 않거나 // 100으로 나누어지거나
+        }else{                          //4로 나누어 떨어지지 않거나 // 100으로 나누어지거나
             leapyear = "윤년이 아닙니다.";
         }
         System.out.println(year + "년은" + leapyear);

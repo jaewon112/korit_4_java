@@ -12,6 +12,7 @@ public class Array02 {
         for (int i = 0; i < intArr01.length; i++) {
             sum += intArr01[i];
         }
+
         System.out.println("배열의 합 : "+sum);
 
         int sumEven = 0;
@@ -29,15 +30,16 @@ public class Array02 {
         intArray02[1] = 100;
         intArray02[2] = 100;
         intArray02[3] = 100;
-        // intArray02에 전부 다 100 대입
+        // intArray02의 배열에전부 다 100 대입
         for (int i=0; i < intArray02.length; i++) {
             intArray02[i] = 100;
         }
-        System.out.println(intArray02[99]);
+        System.out.println("ㅁ: " +intArray02[89]);
         // intArr02에다가 다시 값을 재대입
         for (int i = 0; i < intArray02.length; i++) {
             intArray02[i] = (i+1);
         }
+        System.out.println(intArray02[3]);
 
 
 
@@ -63,7 +65,7 @@ public class Array02 {
         //이를 축약시키면
         for (int i = 0; i < intArray02.length; i++) {
             // 값 대입 영역
-            intArray02[i] = i+2;
+            intArray02[i] = i+1;
             //합 영역
             total += intArray02[i];
             // 3의 배수의 합 구하는 조건문 영역

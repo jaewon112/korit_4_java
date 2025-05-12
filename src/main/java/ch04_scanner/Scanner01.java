@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class Scanner01 {
     public static void main(String[] args) {
         //변수 선언
-//        String name;
-//
-//        name = "김재원";
+        String name;
 
         Scanner scanner = new Scanner(System.in);
-//        System.out.print("이름을 입력하세요 >>>>>>");
-//        String name = scanner.nextLine();
-//        System.out.println(name);
+            System.out.print("이름을 입력하세요 >>>>>>");
+            name = scanner.nextLine();
+            System.out.println(name);
 
         /*
             System.out.println() 의 경우 실행하고 나서 개행(enter키 누른거 / 줄바꿈) 이 이루어짐
@@ -21,10 +19,10 @@ public class Scanner01 {
          */
         System.out.print("올해는 몇년도 인가요? >>>>");
         int year = scanner.nextInt();
-        //scanner.nextLine();                 //엔터키를 대신 받아주는 배리어 역할
+//        scanner.nextLine();                 //엔터키를 대신 받아주는 배리어 역할
 
         System.out.print("당신의 이름은? >>>>>");
-        String name = scanner.nextLine();
+        name = scanner.nextLine();
         System.out.println(year + "년도");
         System.out.println("이름 : " + name);
 

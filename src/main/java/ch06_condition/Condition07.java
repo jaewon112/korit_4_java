@@ -59,9 +59,7 @@ public class Condition07 {
             } else {
                 grade = "F학점";
             }
-        }
-
             System.out.println("당신의 점수는 " + score + "이고, " + "학점은 " + grade + "입니다.");
-
+        }
     }
 }
